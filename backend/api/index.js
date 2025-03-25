@@ -4,7 +4,7 @@ const cors = require("cors");
 const app = express();
 app.use(cors()); // Allow CORS for frontend-backend communication
 app.use(express.json());
-
+print("Testing");
 app.get("/message", (req, res) => {
   res.json({ message: "Hello from Vercel backend!" });
 });
